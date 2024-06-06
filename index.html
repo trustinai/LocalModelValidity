@@ -160,7 +160,6 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            
 Real-world applications of machine learning models are often subject to legal or policy-based regulations. Some of these regulations require ensuring the validity of the model, i.e., the approximation error being smaller than a threshold. A global metric is generally too insensitive to determine the validity of a specific prediction, whereas evaluating local validity is costly since it requires gathering additional data. We propose learning the model error to acquire a local validity estimate while reducing the amount of required data through active learning. Using model validation benchmarks, we provide empirical evidence that the proposed method can lead to an error model with sufficient discriminative properties using a relatively small amount of data. Furthermore, an increased sensitivity to local changes of the validity bounds compared to alternative approaches is demonstrated.
           </p>
         </div>
@@ -178,32 +177,19 @@ Real-world applications of machine learning models are often subject to legal or
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel1.jpg" alt="Example 1: Limit State"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
+ Illustration of a locally valid model: The trained model is marginally valid with 80% probability in certain regions of the input space.
+Shows the marginal distribution of the true absolute error, with the 80% quantile corresponding to the tolerance level.
+Depicts the learned error model and 90% confidence interval, along with the predicted local valid set.
+Samples are sequentially placed to reduce misclassification probability, with most samples near the limit state.      </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel2.jpg" alt="Example 2: Limit State"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+         Prediction for the modified Rastrigin function after 20 initial and 70 adaptive observations, with specified parameters. The true limit state is shown by the black line.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
@@ -213,7 +199,7 @@ Real-world applications of machine learning models are often subject to legal or
 
 
 
-<!-- Youtube video -->
+<!-- Youtube video 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -231,48 +217,17 @@ Real-world applications of machine learning models are often subject to legal or
     </div>
   </div>
 </section>
+  -->
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
 
 
 
 
 
-<!-- Paper poster -->
+<!-- Paper poster 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -284,6 +239,7 @@ Real-world applications of machine learning models are often subject to legal or
       </div>
     </div>
   </section>
+  -->
 <!--End paper poster -->
 
 
@@ -291,7 +247,14 @@ Real-world applications of machine learning models are often subject to legal or
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{
+laemmle2024quantifying,
+title={Quantifying Local Model Validity using Active Learning},
+author={Sven L{\"a}mmle and Can Bogoclu and Robert Vosshall and Anselm Haselhoff and Dirk Roos},
+booktitle={The 40th Conference on Uncertainty in Artificial Intelligence},
+year={2024},
+url={https://openreview.net/forum?id=muDcwOKf50}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
