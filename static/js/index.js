@@ -10,7 +10,7 @@ $(document).ready(function() {
 			loop: true,
 			infinite: true,
 			autoplay: true,
-			autoplaySpeed: 20000,
+			autoplaySpeed: 220000,
     }
 
 		// Initialize all div with carousel class
